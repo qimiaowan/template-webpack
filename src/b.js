@@ -5,3 +5,5 @@ export default function fn() {
 function cb(){
   console.log(22);
 }
+
+cb()

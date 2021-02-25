@@ -1,10 +1,18 @@
 import a from './a'
-import b from './b'
+import './1.css'
+import './2.css'
+import './3.css'
+import './4.scss'
+
+// import $ from 'jquery';
+import('./b')
+import cd from './as'
+console.log('你',cd);
+// console.log($);
 console.log(a());
-console.log(b());
 const obj = /*#__PURE__*/new Proxy({}, {
   get() {
-    return 1
+    return 2
   }
 })
 
@@ -32,6 +40,6 @@ const t = ()=>{
 }
 const c = add(t(1), 2)
 console.log(c);
-console.log(add(1,3))
+console.log(add(1,32))
 const exponentiation = 2 ** 2
 console.log(exponentiation);

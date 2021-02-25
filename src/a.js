@@ -1,5 +1,5 @@
 export default function fn() {
-  return 4242
+  return 4242111
 }
 
 function b(){
