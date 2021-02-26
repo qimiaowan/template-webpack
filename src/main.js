@@ -14,7 +14,7 @@ const obj = /*#__PURE__*/ new Proxy(
 	{},
 	{
 		get() {
-			return 31214
+			return '喜喜'
 		}
 	}
 )
