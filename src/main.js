@@ -18,7 +18,7 @@ const obj = /*#__PURE__*/ new Proxy(
 		}
 	}
 )
-
+console.log(dds)
 console.log(process.env.NODE_ENV)
 console.log(process.env.a)
 console.log(process.env.b)
