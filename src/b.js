@@ -1,9 +1,7 @@
 export default function fn() {
-  return 1111
+	return 1111
 }
-
-function cb(){
-  console.log(22);
+function cb() {
+	console.log(22)
 }
-
 cb()
