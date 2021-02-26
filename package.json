@@ -9,7 +9,7 @@
     "start": "cross-env NODE_ENV=development webpack serve --progress --config ./config/webpack.common.js",
     "build:dev": "cross-env NODE_ENV=development webpack --progress --config ./config/webpack.common.js",
     "build:prod": "cross-env NODE_ENV=production webpack --progress --config ./config/webpack.common.js"
-	},
+  },
   "devDependencies": {
     "@babel/core": "^7.13.1",
     "@babel/preset-env": "^7.13.5",
@@ -30,6 +30,7 @@
     "postcss": "^8.2.6",
     "postcss-loader": "^5.0.0",
     "postcss-preset-env": "^6.7.0",
+    "pre-commit": "^1.2.2",
     "prettier": "^2.2.1",
     "sass": "^1.32.8",
     "sass-loader": "^11.0.1",
@@ -40,15 +41,14 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {},
-  "husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
+  "pre-commit": {
+		"precommit": "lint-staged"
 	},
   "lint-staged": {
     "src/*.js": [
+      "eslint --fix ",
       "prettier --write",
-      "eslint --fix "
+			"git add"
     ]
   }
 }

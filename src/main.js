@@ -6,12 +6,13 @@ import './4.scss'
 // import $ from 'jquery';
 import('./b')
 import cd from './as'
-console.log('你',cd)
+console.log('你', cd)
 
 // console.log($);
 console.log(a())
 const obj = /*#__PURE__*/ new Proxy(
-	{},{
+	{},
+	{
 		get() {
 			return 31214
 		}
@@ -21,14 +22,14 @@ const obj = /*#__PURE__*/ new Proxy(
 console.log(process.env.NODE_ENV)
 console.log(process.env.a)
 console.log(process.env.b)
-var s = 'ac'
-function add(a,b){
-	return a+b
+var s = 'a32c'
+function add(a, b) {
+	return a + b
 }
 if (a) {
 	console.log(11)
 }
-const aa=43
+const aa = 43
 console.log(obj.s)
 
 const prom = new Promise((resolve, reject) => {
