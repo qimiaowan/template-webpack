@@ -18,7 +18,9 @@ const obj = /*#__PURE__*/ new Proxy(
 		}
 	}
 )
-console.log(dds)
+const tt = 1
+tt = 2
+console.log(tt)
 console.log(process.env.NODE_ENV)
 console.log(process.env.a)
 console.log(process.env.b)
