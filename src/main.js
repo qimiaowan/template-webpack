@@ -13,7 +13,7 @@ console.log(a())
 const obj = /*#__PURE__*/ new Proxy(
 	{},{
 		get() {
-			return 34
+			return 324
 		}
 	}
 )
@@ -22,13 +22,13 @@ console.log(process.env.NODE_ENV)
 console.log(process.env.a)
 console.log(process.env.b)
 var s = 'a'
-function add(a, b){
+function add(a,b){
 	return a +b
 }
 if (a) {
 	console.log(11)
 }
-const aa = 43
+const aa=43
 console.log(obj.s)
 
 const prom = new Promise((resolve, reject) => {

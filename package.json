@@ -47,9 +47,8 @@
 	},
   "lint-staged": {
     "*.{js,jsx,vue}": [
-      "eslint --ext .vue,.js,.jsx --fix ./src",
-      "prettier --write ./src",
-      "git add"
+      "eslint --fix ",
+      "prettier --write"
     ]
   }
 }
