@@ -44,7 +44,7 @@
   "pre-commit": ["precommit"],
   "lint-staged": {
     "src/*.js": [
-      "eslint --fix"
+      "eslint"
     ]
   }
 }
