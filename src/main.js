@@ -23,7 +23,7 @@ console.log(process.env.a)
 console.log(process.env.b)
 var s = 'a'
 function add(a,b){
-	return a +b
+	return a+b
 }
 if (a) {
 	console.log(11)
