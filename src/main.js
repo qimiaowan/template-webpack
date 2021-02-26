@@ -13,7 +13,7 @@ console.log(a())
 const obj = /*#__PURE__*/ new Proxy(
 	{},{
 		get() {
-			return 2
+			return 3
 		}
 	}
 )
