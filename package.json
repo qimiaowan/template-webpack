@@ -47,9 +47,8 @@
 	},
   "lint-staged": {
     "src/*.js": [
-      "eslint --fix ",
       "prettier --write",
-			"git add"
+      "eslint --fix "
     ]
   }
 }

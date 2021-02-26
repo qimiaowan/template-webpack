@@ -13,7 +13,7 @@ console.log(a())
 const obj = /*#__PURE__*/ new Proxy(
 	{},{
 		get() {
-			return 324
+			return 31214
 		}
 	}
 )
@@ -21,7 +21,7 @@ const obj = /*#__PURE__*/ new Proxy(
 console.log(process.env.NODE_ENV)
 console.log(process.env.a)
 console.log(process.env.b)
-var s = 'a'
+var s = 'ac'
 function add(a,b){
 	return a+b
 }
