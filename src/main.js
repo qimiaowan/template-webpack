@@ -7,10 +7,10 @@ import './4.scss'
 import('./b')
 import cd from './as'
 console.log('你', cd)
-
+// 423
 // console.log($);
 console.log(a())
-const obj = /*#__PURE__*/ new Proxy(
+const obj = /* #__PURE__ */ new Proxy(
 	{},
 	{
 		get() {
@@ -19,7 +19,6 @@ const obj = /*#__PURE__*/ new Proxy(
 	}
 )
 const tt = 1
-tt = 24234
 console.log(tt)
 console.log(process.env.NODE_ENV)
 console.log(process.env.a)
@@ -46,6 +45,11 @@ const t = () => {
 	console.log('->', 1)
 	return 3
 }
+const aaaa = 1
+const obj1 = { aaaa1: 1, bbbb1: 2 }
+const { aaaa1, bbbb1 } = obj1
+console.log(aaaa1)
+console.log(bbbb1)
 const c = add(t(1), 2)
 console.log(c)
 console.log(add(1, 32))

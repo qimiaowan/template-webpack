@@ -3,6 +3,15 @@ module.exports = {
 	rules: {
 		'no-console': 'off',
 		'no-debugger': 'off',
+		'no-const-assign': 'error',
+		'spaced-comment': 'error',
+		'prefer-const': [
+			'error',
+			{
+				destructuring: 'any',
+				ignoreReadBeforeAssign: false
+			}
+		],
 		'prettier/prettier': 'error'
 	},
 	parserOptions: {
