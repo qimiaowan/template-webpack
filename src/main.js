@@ -6,13 +6,12 @@ import './4.scss'
 // import $ from 'jquery';
 import('./b')
 import cd from './as'
-console.log('你', cd)
+console.log('你',cd)
 
 // console.log($);
 console.log(a())
 const obj = /*#__PURE__*/ new Proxy(
-	{},
-	{
+	{},{
 		get() {
 			return 2
 		}
@@ -23,8 +22,8 @@ console.log(process.env.NODE_ENV)
 console.log(process.env.a)
 console.log(process.env.b)
 var s = 'a'
-function add(a, b) {
-	return a + b
+function add(a, b){
+	return a +b
 }
 if (a) {
 	console.log(11)

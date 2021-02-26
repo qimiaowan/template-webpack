@@ -1,12 +1,9 @@
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
-module.exports = {
+const prodConfig = {
 	mode: 'production',
 	optimization: {
-		minimizer: [
-			new CssMinimizerPlugin({
-				cache: true
-			})
-		]
+		minimizer: ['...', new CssMinimizerPlugin()]
 	}
 }
+module.exports = prodConfig
