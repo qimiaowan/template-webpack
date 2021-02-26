@@ -19,7 +19,7 @@ const obj = /*#__PURE__*/ new Proxy(
 	}
 )
 const tt = 1
-tt = 2
+tt = 24234
 console.log(tt)
 console.log(process.env.NODE_ENV)
 console.log(process.env.a)
