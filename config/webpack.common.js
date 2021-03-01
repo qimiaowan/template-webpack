@@ -128,7 +128,7 @@ const webpackConfig = merge(
 					]
 				},
 				{
-					enforce: 'pre', //优先执行 前置
+					enforce: 'pre', // 优先执行 前置
 					test: /\.m?js$/,
 					exclude: /(node_modules|bower_components)/,
 					use: [
@@ -155,7 +155,7 @@ const webpackConfig = merge(
 		},
 		plugins: [
 			new HtmlWebpackPlugin({
-				title: '哈哈哈哈',
+				title: process.env.title || '哈哈哈哈',
 				filename: 'index.html',
 				template: 'public/index.html',
 				inject: 'body',
