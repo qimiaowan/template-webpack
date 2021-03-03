@@ -1,10 +1,7 @@
 // import { createApp } from 'vue'
+// import app from './app'
 // createApp(app).mount('#app')
-import Vue from 'vue'
-import app from './app'
-new Vue({
-	render: h => h(app)
-}).$mount('#app')
+
 import a from './a'
 import './1.css'
 import './2.css'
@@ -13,7 +10,8 @@ import './4.scss'
 // import $ from 'jquery';
 import('./b')
 import cd from './as'
-console.log('你', cd)
+console.log('你das', cd)
+console.log('你1', cd)
 // 423
 // console.log($);
 console.log(a())

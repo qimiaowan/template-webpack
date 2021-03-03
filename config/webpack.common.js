@@ -8,7 +8,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const miniCssChunks = require('mini-css-extract-plugin')
 // vue配置
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const { VueLoaderPlugin } = require('vue-loader')
 
 const env = readEnv('.env')
 
@@ -42,41 +42,13 @@ const config = {
 		alias: {
 			// 别名
 		},
-		extensions: ['.vue', '.ts', '.js']
+		extensions: ['.vue', '.ts', '.js', '.json']
 		// modules: ['node_modules'] //查找模块位置
 	},
 	// externals: {
 	// },
-	// optimization: { // 本身production 就提供默认优化
-	// splitChunks: {
-	//   chunks: 'all',
-	//   minSize: 1,
-	//   maxSize: 1,
-	// },
-	// splitGroups: {
-	// }
-	// },
-	optimization: {
-		splitChunks: {
-			cacheGroups: {
-				defaultVendors: {
-					name: 'chunk-vendors',
-					test: /[\\/]node_modules[\\/]/,
-					priority: -10,
-					chunks: 'initial'
-				},
-				common: {
-					name: 'chunk-common',
-					minChunks: 2,
-					priority: -20,
-					chunks: 'initial',
-					reuseExistingChunk: true
-				}
-			}
-		}
-	},
 	module: {
-		// noParse: '',
+		noParse: /^(vue|vue-router|vuex)$/,
 		rules: [
 			{
 				test: /\.(eot|ttf|woff|woff2)$/i,
@@ -178,7 +150,7 @@ const config = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: process.env.title || '哈哈哈哈',
+			title: process.env.title || 'd',
 			filename: 'index.html',
 			template: 'public/index.html',
 			inject: 'body',
@@ -212,5 +184,5 @@ const config = {
 // vue配置
 
 const webpackConfig = merge(config, assignConfig)
-
+console.log(webpackConfig)
 module.exports = webpackConfig
