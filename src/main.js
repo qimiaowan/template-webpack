@@ -1,3 +1,10 @@
+// import { createApp } from 'vue'
+// createApp(app).mount('#app')
+import Vue from 'vue'
+import app from './app'
+new Vue({
+	render: h => h(app)
+}).$mount('#app')
 import a from './a'
 import './1.css'
 import './2.css'
